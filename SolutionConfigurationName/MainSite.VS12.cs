@@ -76,12 +76,16 @@ namespace SolutionConfigurationName
         {
             switch (_Version)
             {
+#if false
+#if VS12
                 case DTEVersion.VS12:
                     await SetVCProjectsConfigurationProperties12(project, configurationName, platformName);
                     break;
                 case DTEVersion.VS14:
                     await SetVCProjectsConfigurationProperties14(project, configurationName, platformName);
                     break;
+#endif
+#endif
                 default:
                     throw new Exception();
             }

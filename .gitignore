@@ -13,3 +13,6 @@ bin/
 obj/
 .svn/
 Key.snk
+packages/
+targetVS16/
+*.snk

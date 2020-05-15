@@ -48,6 +48,16 @@ namespace SolutionConfigurationNameMef
             }
         }
 
+        [ImportingConstructor]
+        protected SolutionConfigurationPropertiesProvider(IProjectCommonServices service)
+            : base(service)
+        {
+            lock (_lock)
+            {
+                _instance = this;
+            }
+        }
+
         public static void SetSolutionConfiguration(string configurationName, string platformName)
         {
             lock (_lock)
