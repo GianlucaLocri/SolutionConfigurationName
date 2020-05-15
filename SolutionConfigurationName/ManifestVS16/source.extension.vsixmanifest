@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="f8b7f761-0afd-47d2-8f62-136c7dc50973" Version="1.0.8" Language="en-US" Publisher="Francesco Pretto" />
+        <Identity Id="f8b7f761-0afd-47d2-8f62-136c7dc50973" Version="1.0.8" Language="en-US" Publisher="Moustafa Khalil" />
         <DisplayName>Solution Configuration Name</DisplayName>
         <Description xml:space="preserve">A Visual Studio extension that sets SolutionConfiguration and SolutionPlatform build macros</Description>
         <Icon>Resources\Icon.png</Icon>
@@ -19,7 +19,7 @@
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="SolutionConfigurationNameMEF" Path="|SolutionConfigurationNameMEF|" />
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%MEF" Path="|SolutionConfigurationNameVS16MEF|" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.Component.MSBuild" Version="[16.0.28517.75,17.0)" DisplayName="MSBuild" />
